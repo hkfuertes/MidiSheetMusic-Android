@@ -36,5 +36,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: MidiSheetMusic
-          path: ./app/build/outputs/apk/releases/app-release-unsigned.apk
+          path: ./app/build/outputs/apk/releases/
+          #path: ./app/build/outputs/apk/releases/app-release-unsigned.apk
 
