@@ -29,8 +29,8 @@ jobs:
       - name: Build Project
         run: ./gradlew assembleRelease
         
-      #- name: List
-      #  run: tree .
+      - name: List
+        run: tree ./app/build/outputs/
         
       - name: Publish Artifacts
         uses: actions/upload-artifact@v2
