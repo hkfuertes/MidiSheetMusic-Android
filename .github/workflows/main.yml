@@ -28,4 +28,10 @@ jobs:
         
       - name: Build Project
         run: ./gradlew assembleRelease
+        
+      - name: Publish Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: MidiSheetMusic
+          path: ./android/app/build/outputs/apk/app-release-unsigned.apk
 
